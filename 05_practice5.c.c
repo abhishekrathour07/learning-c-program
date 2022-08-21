@@ -1,5 +1,5 @@
 // what is the following line present in c
-// printf("%d,%d,%d"a,a++,++a);
+// printf("%d,%d,%d"(a++),a,++a);
 #include<stdio.h>
 
 int main(){
