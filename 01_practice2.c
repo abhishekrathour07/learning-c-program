@@ -1,7 +1,10 @@
+//find area of cylinder and circle
+
 #include <stdio.h>
+
 int main()
 {
-    // Changes here tooo
+    
     int r = 4;
     float pie = 3.14;
     int h = 3;

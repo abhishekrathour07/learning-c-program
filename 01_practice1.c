@@ -1,6 +1,6 @@
+// find the length and bredth of a rectangle
+
 #include <stdio.h>
-
-
 int main(){
     // Changes Here 1 2
     

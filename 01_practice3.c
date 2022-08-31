@@ -1,7 +1,8 @@
+//write a program to convert celcius inti forenheit
 #include <stdio.h>
 
 int main()
-{ // anhi new comment
+{
     float celcius, farenheit;
     printf("enter the value of celcius");
     scanf("%f", &celcius);
