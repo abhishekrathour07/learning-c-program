@@ -1,3 +1,4 @@
+// find multiplication table of 8 using for loop?
 #include <stdio.h>
 int main()
 {

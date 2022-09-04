@@ -1,3 +1,4 @@
+//legal or illagal statement and no operator confirm exponential
 #include <stdio.h>
 #include <math.h>
 int main()

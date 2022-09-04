@@ -1,3 +1,4 @@
+//recursion concept is introduce in function?
 #include <stdio.h>
 int factorial(int x);
 

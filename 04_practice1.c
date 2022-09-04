@@ -1,3 +1,5 @@
+// write a program to find muntiplicatin table of a given no using forr loop?
+
 #include <stdio.h>
 #include <conio.h>
 void main()

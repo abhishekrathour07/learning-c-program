@@ -1,3 +1,4 @@
+// write a program to find prime number as input taken by users
 #include <stdio.h>
 
 void main()

@@ -1,4 +1,4 @@
-//write a program to convert celcius inti forenheit
+//write a program to convert celcius into forenheit
 #include <stdio.h>
 
 int main()

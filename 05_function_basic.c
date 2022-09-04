@@ -1,3 +1,4 @@
+//  the concept and types of function
 #include<stdio.h>
 
 void display(); //function prototype

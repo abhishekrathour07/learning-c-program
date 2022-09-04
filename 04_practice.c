@@ -1,3 +1,4 @@
+// write a program to find muntiplicatioon table of a given number? using loops.
 // #include <stdio.h>
 
 // int main()

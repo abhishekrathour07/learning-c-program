@@ -1,3 +1,4 @@
+// write a program to write multiplicatin table in reverse order 
 #include<stdio.h>
 
 int main(){
