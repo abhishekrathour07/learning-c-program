@@ -18,6 +18,3 @@ for(i=0;i<size;i++){
  else
  odd++;
  }
-printf("the total even numbers are : %d\n",even);   
-printf("\nThe tottal odd number are :%d",odd);
-}
