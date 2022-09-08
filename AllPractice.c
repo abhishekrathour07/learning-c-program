@@ -145,7 +145,7 @@ void main()
 // int size,i,max,arr[100];
 // printf("Enter the size of Array");
 // scanf("%d",&size);
-// printf("Enter the element of Array");
+// printf("Enter the element of Array"); 
 // for(i=0;i<size;i++){
 //     scanf("%d",&arr[i]);
 // }

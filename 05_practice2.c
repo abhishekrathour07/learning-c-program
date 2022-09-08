@@ -6,7 +6,7 @@ int main(){
     int celcius;
 printf("enter the value of celcius");
 scanf("%d",& celcius);
-printf("the value of cls in far is %f\n",far(celcius));
+printf("the value of cls in far is %.3f\n",far(celcius));
     return 0;
 }
 float far (int celcius){

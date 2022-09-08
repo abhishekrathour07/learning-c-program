@@ -53,6 +53,9 @@ void main()
     }
     printf("\n");
             }
+    printf("The address is %u\n",&i);
+    printf("The address is %u\n",&j);
+            
      }
     
     
