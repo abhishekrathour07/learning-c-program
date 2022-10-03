@@ -6,7 +6,7 @@ int sumNumbers(int n){
  if (n != 0){
         return n + sumNumbers(n - 1);
  }else{
-        return n;
+        return n ;
 }
 }
 int main()
