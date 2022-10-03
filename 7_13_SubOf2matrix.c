@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// the quick brown fox jumps on the lazy dog
+
 void main()
 {
     int matrix1[3][2], matrix2[3][2], sum[3][2];

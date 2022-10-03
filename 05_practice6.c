@@ -1,21 +1,19 @@
 // write a recurssion program to find sum of n natural number;
 #include <stdio.h>
 
-int addNumbers(int n);
-
+int sumNumbers(int n){
+    printf("the natural numbers are %d\n",n);
+ if (n != 0){
+        return n + sumNumbers(n - 1);
+ }else{
+        return n;
+}
+}
 int main()
 {
     int num;
-    printf("Enter a positive integer: ");
+    printf("Enter the natural number to find sum of that ");
     scanf("%d", &num);
-    printf("Sum = %d", addNumbers(num));
+    printf("Sum of natural number = %d", sumNumbers(num));
     return 0;
-}
-
-int addNumbers(int n)
-{
-    if (n != 0)
-        return n + addNumbers(n - 1);
-    else
-        return n;
 }

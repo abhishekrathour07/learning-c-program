@@ -4,29 +4,29 @@
 
 void main()
 {
-    int a, b, c, d, highestNum = 0;
-    printf("enter your number a");
+    int a, b, c, d;
+    printf("enter your number a :");
     scanf("%d", &a);
-    printf("enter your number b");
+    printf("enter your number b :");
     scanf("%d", &b);
-    printf("enter your number c");
+    printf("enter your number c :");
     scanf("%d", &c);
-    printf("enter your number d");
+    printf("enter your number d :");
     scanf("%d", &d);
     if (a > b && a > b && a > c && a > d)
     {
-        printf("a is greater no");
+        printf("a is greater number");
     }
     else if (b > a && b > c && b > d)
     {
-        printf("b is greater no");
+        printf("b is greater number");
     }
     else if (c > a && c > b && c > d)
     {
-        printf("c is greater no");
+        printf("c is greater number");
     }
     else
     {
-        printf("d is greater no");
+        printf("d is greater number");
     }
 }

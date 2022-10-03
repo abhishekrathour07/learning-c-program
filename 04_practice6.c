@@ -3,13 +3,13 @@
 
 void main()
 {
-    int n, i, prime, min;
+    int num, i, prime, min;
     printf("enter the no. to find prime \n");
-    scanf("%d", &n);
-    min = n / 2;
+    scanf("%d", &num);
+    min = num / 2;
     for (i = 2; i <= min; i++)
     {
-        if (n % i == 0)
+        if (num % i == 0)
         {
             prime = 0;
             break;

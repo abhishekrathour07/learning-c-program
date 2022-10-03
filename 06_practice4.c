@@ -1,16 +1,18 @@
-// 
+// write aprogram using a Function which calculate the sum and avg of two numbers.Use
+// printf and print the value in main.
 
-#include<stdio.h>
-int sum(int a,int b){
-  return a+b;
+#include <stdio.h>
 
+void sumAndAvg(int a, int b, int *sum, float *avg)
+{
+    *sum = a + b;
+     *avg = (float)*sum / 2; 
 }
-int avg(int i, int j ){
-   return i+j/2;
-   
-}
-void main(){
-int a=10,b=20;
-printf("the sum is %d\n" ,sum(a,b));
-printf("the avg is %d\n" , avg(a,b));
+void main()
+{
+    int i = 23, j = 32, sum;
+    float avg;
+    sumAndAvg(i, j, &sum, &avg);
+    printf("the sum of the variable is %d\n", sum);
+    printf("the avg of the variable is %.3f\n", avg);
 }

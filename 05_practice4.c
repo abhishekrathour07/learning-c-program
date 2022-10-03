@@ -1,4 +1,4 @@
-// write a program to find fabonacci series.
+// write a program to find fabonacci series .
 
 #include<stdio.h>
 

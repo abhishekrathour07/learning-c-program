@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "06_callbyreference": "c"
+        "06_callbyreference": "c",
+        "stdio.h": "c"
     }
 }
