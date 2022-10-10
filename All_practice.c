@@ -1,19 +1,23 @@
 #include<stdio.h>
 
-void main (){
+void main(){
+    int i =6;
+    int *j ,**k;
+    j=&i ;k=&j;
+     sizeof(i);
+     sizeof(k);
+     sizeof(k);
+printf("size of i is :%d",sizeof(i));
+printf("size of j is :%d",sizeof(j));
+printf("size of k is :%d",sizeof(k));
 
-  int t1=0,t2=1,i,n;
-  int t3= t1 +t2;
-printf("Enter the number of terms\n");
-scanf("%d",&n);
-printf("fibonacci series are %d,%d,",t1,t2);
-for(i=0;i<=n;i++){
-printf("%d,",t3);
-  t1=t2;
-  t2=t3;
-  t3=t1+t2;
+    
+    printf("The value of i Is  %d : ",i);
+
+    printf("The value of  i is %d\n", *j);
+    printf("The address of  i is %d\n", j);
+    printf("The address of  j is %d\n",&j);
+    printf("The address of  k is %d\n",&k);
+
+
 }
-
-}
-
-

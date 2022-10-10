@@ -5,4 +5,4 @@ void main(){
     int a = strlen(st);
    printf(" The length of a string is %d", a);
 
-}
+} 
