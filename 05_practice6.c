@@ -5,15 +5,16 @@ int sumNumbers(int n){
     printf("the natural numbers are %d\n",n);
  if (n != 0){
         return n + sumNumbers(n - 1);
- }else{
-        return n ;
+ } 
+ else{
+         return n ;
 }
 }
 int main()
 {
-    int num;
-    printf("Enter the natural number to find sum of that ");
-    scanf("%d", &num);
-    printf("Sum of natural number = %d", sumNumbers(num));
-    return 0;
+     int num;
+          printf("Enter the natural number to find sum of that ");
+          scanf("%d", &num);
+          printf("Sum of natural number = %d", sumNumbers(num));
+          return 0;
 }
