@@ -19,7 +19,7 @@ int main()
             printf("%d\t", arr[i][j]);
             sum = sum + arr[i][j];
     }
-          printf("\n");
+          printf("\n");             
         }
     printf("\nsum of the array is %d\n", sum);
     return 0;

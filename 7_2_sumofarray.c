@@ -8,12 +8,12 @@ void main()
     scanf("%d", &size);
     printf("Enter the element in the array\n");
 
+        max = mark[0];
     for (i = 0; i < size; i++)
     {
         scanf("%d", &mark[i]);
-        max = mark[0];
-        if (mark[i] > max)       
-            max = mark[i];       
+        if (mark[i] > max)
+            max = mark[i];
         sum += mark[i],
             avg = sum / size;
     }
