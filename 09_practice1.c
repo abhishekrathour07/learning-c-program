@@ -1,7 +1,7 @@
 // Create a two dimensional vector using structure in c?
 
 #include<stdio.h>
-#include<string.h>
+
 struct vector{
     int i;
     int j;

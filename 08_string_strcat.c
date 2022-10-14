@@ -3,7 +3,10 @@
 void main()
 {
     char string1[43]= "Boliye ";
-    char *string2 = "abhishek ji ki jai";
-    strcat(string1, string2);
-    printf(" bs yhi hai jiwan ka raj toh %s",string1);
+    // char *string2 = "jai shree";
+    strcat(string1, "ka boli mardwa"); // -->adding value on string
+    strcat(string1, ", Ram ji ki jai bola ho");
+    printf(" string1 = %s\n",string1);
+  
+
 }
