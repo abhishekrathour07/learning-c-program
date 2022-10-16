@@ -1,10 +1,10 @@
 #include <stdio.h>
 void red () {
-  printf("\033[1;31m");
+  printf("\033[2;35m");
 }
 
 void blue() {
-  printf("\033[4;34m");
+  printf("\033[0;32m");
 }
 
 void reset () {
@@ -14,7 +14,7 @@ void reset () {
 int main () {
   red();
   printf("Hello ");
-  blue();
+  blue();              
   printf("world\n");
   reset();
   return 0;

@@ -2,20 +2,20 @@
 
 #include <stdio.h>
 #include <conio.h>
-struct vector
+typedef struct vector
 {
     int x, y;
-};
-struct vector sumvector(struct vector v1, struct vector v2)
+}vect;
+vect sumvector( vect v1, vect v2)
 {
-    struct vector result;
+     vect result;
     result.x = v1.x + v2.x;
     result.y = v1.y + v2.y;
     return result;
 }
 int main()
 {
-    struct vector v1, v2, sum;
+     vect v1, v2, sum;
     v1.x = 12;
     v1.y = 9;
     printf("the dimension of x is :%d and dimension of y is: %d\n", v1.x, v1.y);
