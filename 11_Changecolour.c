@@ -1,20 +1,24 @@
 #include <stdio.h>
-void red () {
-  printf("\033[2;35m");
+void red()
+{
+  printf("\033[2;37m");
 }
 
-void blue() {
+void blue()
+{
   printf("\033[0;32m");
 }
 
-void reset () {
+void reset()
+{
   printf("\033[0m");
 }
 
-int main () {
+int main()
+{
   red();
   printf("Hello ");
-  blue();              
+  blue();
   printf("world\n");
   reset();
   return 0;
