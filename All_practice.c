@@ -1,23 +1,50 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
-void main(){
-    int i =6;
-    int *j ,**k;
-    j=&i ;k=&j;
-     sizeof(i);
-     sizeof(k);
-     sizeof(k);
-printf("size of i is :%d",sizeof(i));
-printf("size of j is :%d",sizeof(j));
-printf("size of k is :%d",sizeof(k));
+int main()
+{
+    int num, guess, nguess;
+    srand(time(0));
+    num = rand() % 20 + 1;
+    printf("%d\n", num);
+    printf("Enter the num between 1 to 20\n");
+    do
+    {
+        scanf("%d", &guess);
 
-    
-    printf("The value of i Is  %d : ",i);
+        if (guess > num)
+        {
+            printf("larchat ho ka be \n ");
+        }
 
-    printf("The value of  i is %d\n", *j);
-    printf("The address of  i is %d\n", j);
-    printf("The address of  j is %d\n",&j);
-    printf("The address of  k is %d\n",&k);
+        else if (guess < num)
+        {
+            printf("bhkk teri maa ki chut\n");
+        }
+        else
+        {
+            printf("WAAH RANDI RONA KR KE %d  BAAR ME BTA HI DIYA\n", nguess+1);
+        }
+        nguess++;
+    } while (num != guess);
 
+    if (nguess == 1)
+    {
+        printf(" hmm toh bole hi the ye kr lega  ");
+    }
+    else if (nguess == 2)
+    {
+        printf(" Bhot hi ache trh khela aapne  ");
+    }
+    else if (nguess == 3)
+    {
+        printf(" DER AAYE DURUST AAYE ");
+    }
+    else
+    {
+        printf(" Gand fte toh fte pr nbanbi na ghte ");
+    }
 
+    return 0;
 }

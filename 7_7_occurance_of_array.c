@@ -2,7 +2,7 @@
 
 void main()
 {
-    int arr[25], count = 0, i, size, search;
+    int arr[25], i, size, search;
     printf("Enter the size of array\n");
     scanf("%d", &size);
     printf("Enter the element in the array :\n");
@@ -17,7 +17,6 @@ void main()
         if (arr[i] == search)
         {
             printf("%d is position at %d in this array\n", search, i + 1);
-            count++;
         }
     }
 }
