@@ -21,6 +21,6 @@ int main()
           c=1;
           
         }
-    }if(c==0)
+    }
     printf("Element in not present in the array");
 }
