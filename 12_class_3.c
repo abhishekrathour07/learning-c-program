@@ -12,10 +12,11 @@ int main(){
         printf("enter your choice\n"
                "1. begining\n2. last\n3. at array possition\n4. display\n5. exit\n");
         scanf("%d", &choice);
-        printf("enter the data to be inserted  ");
-        scanf("%d", &x);
+       
         switch (choice){
         case 1:
+         printf("enter the data to be inserted  ");
+        scanf("%d", &x);
             for (i = (n - 1); i; i--){
                 a[i + 1] = a[i];
             }
@@ -24,13 +25,18 @@ int main(){
             // continue;
             break;
         case 2:
+         printf("enter the data to be inserted  ");
+        scanf("%d", &x);
             a[n] = x;
             n = n + 1;
             break;
         case 3:
-
+         printf("enter the data to be inserted  ");
+        scanf("%d", &x);
+        printf("Enter the position");
+        scanf("%d",&pos);
             for (i = (n - 1); i >= (pos - 1); i--){
-                a[i + 1] = a[i];
+                a[i + 1] = a[1];
             }
             a[pos - 1] = x;
             n = n + 1;
