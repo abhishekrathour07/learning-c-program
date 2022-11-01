@@ -24,5 +24,5 @@ int main()
     printf("the min value is %d\n",min);
     printf("factorial = %d\n",fact);
 
-    return 0;
+     
 }
