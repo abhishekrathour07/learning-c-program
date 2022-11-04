@@ -1,16 +1,14 @@
 
-// write a program to find per of student in five subject 
-#include<stdio.h>
+// write a program to find per of student in five subject
+#include <stdio.h>
+#define c = 99;
 
-void main(){
-    int sub ;
-    printf("Enter  marks in five sub ");
-    for(int i=0;i<5;i++){
-        printf("Enter marks in sub ");
-        scanf("%d",&sub);
-    }
-     for(int i=0;i<5;i++){
-        printf("%d\t",sub);
-    }
-
+int main()
+{
+    int a, b, d;
+    printf("Enter the value of a ,b\n");
+    scanf("%d,%d", &a, &b);
+    d = a * b ;
+    printf("sum = %d", d);
+    return 0;
 }
