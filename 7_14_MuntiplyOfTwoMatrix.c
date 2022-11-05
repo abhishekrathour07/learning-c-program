@@ -13,7 +13,7 @@ void main()
     }
     printf(" Entter the Elements in a2 are:\n");
     for (i = 0; i < 2; i++)
-    {
+    {                           
         for (j = 0; j < 2; j++)
         {
             scanf("%d", &a2[i][j]);
@@ -39,9 +39,9 @@ void main()
     }
     printf("multiplicatiom of a1 and a2 matrix are :\n");
     for (i = 0; i < 2; i++)
-    {
+    {                  
         for (j = 0; j < 2; j++)
-        {
+        {  
             sum[i][j] = a1[i][j] * a2[i][j];
         }
     }
