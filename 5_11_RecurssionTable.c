@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 void table(int num, int i)
 {
