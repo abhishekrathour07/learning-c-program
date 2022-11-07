@@ -6,15 +6,15 @@ void main()
     float sum = 0, avg;
     printf("Enter the size of the array\n");
     scanf("%d", &size);
-    printf("Enter the element in the array\n");
 
         max = mark[0];
     for (i = 0; i < size; i++)
     {
+    printf("Enter the element in a[%d]\n",i);
         scanf("%d", &mark[i]);
         if (mark[i] > max)
             max = mark[i];
-        sum += mark[i],
+        sum += mark[i];
             avg = sum / size;
     }
     printf("the maximum value of array is%d\n", max);
