@@ -10,6 +10,6 @@ int main()
     for (i = 1; i <= num; i++){
         factorial *= i;
     }
-    printf("factorial of %d is %d", num, factorial);
+    printf("factorial of %d  is %d\n", num, factorial);
     return 0;
 }

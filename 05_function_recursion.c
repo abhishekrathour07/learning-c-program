@@ -4,19 +4,21 @@
 
 int factorial(int x)
 {
-    printf("factorial order is %d\n",x);
-    if (x == 0 || x == 1)
+    if (x == 0)
     {
         return 1;
     }
     else
     {
+    printf("factorial order is %d\n",x);
         return x * factorial(x - 1);
     }
 }
 int main()
 {
-    int a = 6;
+    int a ;
+    printf("Enter the value of a ");
+    scanf("%d",&a);
     printf(" The factorial of %d is %d ", a, factorial(a));
     return 0;
 }

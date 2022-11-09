@@ -13,20 +13,20 @@ void main()
     scanf("%d", &c);
     printf("enter your number d :");
     scanf("%d", &d);
-    if (a > b && a > b && a > c && a > d)
+    if (a > b  && a > c && a > d)
     {
-        printf("a is greater number");
+        printf("%d is greater number",a);
     }
     else if (b > a && b > c && b > d)
     {
-        printf("b is greater number");
+        printf("%d is greater number",b);
     }
     else if (c > a && c > b && c > d)
     {
-        printf("c is greater number");
+        printf("%d is greater number",c);
     }
     else
     {
-        printf("d is greater number");
+        printf("%d is greater number",d);
     }
 }
