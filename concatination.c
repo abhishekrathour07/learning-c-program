@@ -21,7 +21,8 @@ int main()
         
     printf("The merged array: ");
     for(int i = 0; i < n3; i++)
-        printf("%d ", c[i]);        //Print the merged array
+     //Print the merged array
+        printf("%d ", c[i]);       
     
     printf("\nFinal array after sorting: ");
     for(int i = 0; i < n3; i++){
