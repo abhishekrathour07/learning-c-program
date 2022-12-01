@@ -8,7 +8,7 @@ int main()
     scanf("%f %f %f", &a, &b, &c);
               disc = b * b - 4 * a * c;
     // condition for real and different roots
-    if (disc > 0)
+    if (disc > 0) 
     {
         root1 = (-b + sqrt(disc)) / (2 * a);
         root2 = (-b - sqrt(disc)) / (2 * a);

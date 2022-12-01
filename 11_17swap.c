@@ -9,9 +9,9 @@ void swap(int *a, int *b)
 void main()
 {
     int a = 56, b = 99;
-    printf("The value of A is %d\n", a);
-    printf("The value of B is %d\n", b);
+    printf("The value of A before is %d\n", a);
+    printf("The value of B before is %d\n", b);
     swap(&a, &b);
-    printf("The value of A is %d\n", a);
-    printf("The value of B is %d\n", b);
+    printf("The value of A  after is %d\n", a);
+    printf("The value of B  after is %d\n", b);
 }
