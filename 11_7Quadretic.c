@@ -1,32 +1,40 @@
-#include <stdio.h>
-#include <math.h>
-int main()
+#include<stdio.h>
+#include<math.h>
+void main()
 {
-    int a,b,c;
-    float  disc, root1, root2, real, imag;
-    printf("Enter coefficients a, b and c: ");
-    scanf("%f %f %f", &a, &b, &c);
-              disc = b * b - 4 * a * c;
-    // condition for real and different roots
-    if (disc > 0) 
-    {
-        root1 = (-b + sqrt(disc)) / (2 * a);
-        root2 = (-b - sqrt(disc)) / (2 * a);
-        printf("root1 = %.2lf and root2 = %.2lf", root1, root2);
-    }
-    // condition for real and equal roots
-    else if (disc == 0)
-    {
-        root1 = root2 = -b / (2 * a);
-        printf("root1 = root2 = %.2lf;", root1);
-    }
-    // if roots are not real
-    else
-    {
-        real = -b / (2 * a);
-        imag = sqrt(-disc) / (2 * a);
-        printf("root1 = %.2lf+%.2lfi and root2 = %.2f-%.2fi", real, imag, real, imag);
-    }
+float a,b,c,disc,r1,r2;
 
-    return 0;
+printf("Enter three Co-efficient \n");
+scanf("%f%f%f", &a,&b,&c);
+if(a == 0)
+printf("\nNot a Quadratic Equation \n");
+else
+{ disc = b * b - 4.0 * a * c;
+if(disc < 0.0)
+{
+printf("\nComplex Roots\n");
+disc = -disc;
+r1 = -b / (2.0 * a);
+r2 = sqrt(disc);
+printf("\nDiscriminant = %f",disc);
+printf("\nRoot1 = %f + I %f", r1,r2);
+printf("\nRoot2 = %f - I %f", r1,r2);
+}
+else if(disc == 0.0)
+{
+printf("\nDiscriminant = %f", disc);
+printf("\nReal and Equal Roots");
+r1 = -b / (2.0 * a);
+printf("\nRoot1 = %f \nRoot2 = %f \n", r1, r1);
+}
+else
+{
+printf("\nDiscriminant = %f", disc);
+printf("\nReal and Unequal Roots \n");
+r1 = (-b + sqrt(disc)) / (2.0 * a);
+r2 = (-b - sqrt(disc)) / (2.0 * a);
+printf("\nRoo1 = %f \nRoot2 = %f", r1, r2);
+}
+}
+
 }

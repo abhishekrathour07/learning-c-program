@@ -8,6 +8,10 @@ void main(){
     scanf("%d",&b);
     printf("Enter the value of C");
     scanf("%d",&c);
+    printf("a=%d\n",a);
+    printf("b=%d\n",b);
+    printf("c=%d\n",c);
+
     if(a>b && a>c)
     printf("%d is largest",a);
    else if (b>a && b>c)
