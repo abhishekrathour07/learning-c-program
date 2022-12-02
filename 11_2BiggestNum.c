@@ -14,4 +14,7 @@ void main(){
     printf("%d is largest",b);
     else if(c>a && c>b)
     printf("%d is largest",c);
+    else{
+        printf("All have same value");
+    }
 }

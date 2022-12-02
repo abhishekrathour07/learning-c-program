@@ -1,14 +1,21 @@
+
 #include <stdio.h>
 #include <string.h>
-struct student
+// struct student
+// {
+//     char name[20];
+//     char rollcode[20];
+//     float attendence;
+// };
+union student
 {
-    char name[20];
-    char rollcode[20];
+    char name[12];
+    char rollcode[18];
     float attendence;
 };
 void main()
 {
-    struct student s1, s2, s3;
+    union student s1, s2, s3;
     printf("Enter the name of the student s1 : ");
     scanf("%s", s1.name);
     printf("Enter the Roll code of the student s1 : ");
