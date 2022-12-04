@@ -16,13 +16,19 @@ void main()
         total[i]=m1[i]+m2[i]+m3[i];
         average[i]=(float)total[i]/3;
     }
+        printf("-----------------------------------------\n");
+        printf("s.no        average marks        grade\n");
+        printf("-----------------------------------------\n"); 
     for(i=0;i<n;i++)
     {
-        printf("\nAverage/percentage marks of student %d is: %f",i+1,average[i]);
-        if(average[i]>=35)
-            printf("\nStudent is PASS");
-        else
-            printf("\nStudent is FAIL");
-    }
-    getch();
+        printf("%d\t %d\t %d\t %d\t%f\n",i+1,m1[i],m2[i],m3[i],average[i]);
+        printf("------------------------------------------\n");
+
+
+    //     if(average[i]>=35)
+    //         printf("\nStudent is PASS\n");
+    //     else
+    //         printf("\nStudent is FAIL\n");
+    // }
+}
 }

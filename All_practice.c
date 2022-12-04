@@ -1,34 +1,49 @@
-#include<stdio.h>
+#include <stdio.h>
 #include<conio.h>
-void main()
-{
-    int n, a[25], i, total[20],m1[20],m2[20],m3[20];
-    float average[20];
-    printf("Enter number of students: ");
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
-    {
-        printf("Enter the marks of 3 subjects of student %d: ",i+1);
-        scanf("%d %d %d",&m1[i],&m2[i],&m3[i]);
-    }
-    for(i=0;i<3;i++)
-    {
-        total[i]=m1[i]+m2[i]+m3[i];
-        average[i]=(float)total[i]/3;
-    }
-        printf("-----------------------------------------\n");
-        printf("s.no        average marks        grade\n");
-        printf("-----------------------------------------\n"); 
-    for(i=0;i<n;i++)
-    {
-        printf("%d\t %d\t %d\t %d\t%f\n",i+1,m1[i],m2[i],m3[i],average[i]);
-        printf("------------------------------------------\n");
-
-
-    //     if(average[i]>=35)
-    //         printf("\nStudent is PASS\n");
-    //     else
-    //         printf("\nStudent is FAIL\n");
-    // }
+ int rows, columns;
+ /* adds two matrices and stores the output in third matrix */
+ void matrixAddition(int mat1[][10], int mat2[][10], int mat3[][10]) {
+ int i, j;
+ for (i = 0; i < rows; i++) {
+ for (j = 0; j < columns; j++) {
+ mat3[i][j] = mat1[i][j] + mat2[i][j];
+ }
+ }
+ return;
+ }
+ int main() {
+ int matrix1[10][10], matrix2[10][10];
+ int matrix3[10][10], i, j;
+ /* get the number of rows and columns from user */
+printf("\nEnter the no of rows and columns(<=10):\n");
+scanf("%d%d", &rows, &columns);
+if (rows > 10 || columns > 10) {
+printf("\nNo of rows/columns is greater than 10\n");
+return 0;
+}
+/* input first matrix */
+printf("\nEnter the input for first matrix:\n");
+for (i = 0; i < rows; i++) {
+for (j = 0; j < columns; j++) {
+scanf("%d", &matrix1[i][j]);
 }
 }
+/* input second matrix */
+printf("\nEnter the input for second matrix:\n");
+for (i = 0; i < rows; i++) {
+for (j = 0; j < columns; j++) {
+scanf("%d", &matrix2[i][j]);
+}
+}
+/* matrix addtion */
+matrixAddition(matrix1, matrix2, matrix3);
+/* print the results */
+printf("\nResult of Matrix Addition:\n");
+for (i = 0; i < rows; i++) {
+for (j = 0; j < columns; j++) {
+printf("%5d", matrix3[i][j]);
+}
+printf("\n");
+}
+return 0;
+ }
