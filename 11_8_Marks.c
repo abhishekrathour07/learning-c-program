@@ -25,10 +25,9 @@ void main()
         printf("------------------------------------------\n");
 
 
-    //     if(average[i]>=35)
-    //         printf("\nStudent is PASS\n");
-    //     else
-    //         printf("\nStudent is FAIL\n");
-    // }
-}
+        if(average[i]>=35)
+            printf("\nStudent is PASS\n");
+        else
+            printf("\nStudent is FAIL\n");
+    }
 }
