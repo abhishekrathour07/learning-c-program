@@ -5,7 +5,7 @@
 void main()
 {
     int a = 10;
-    if (a = 11)
+    if (a == 11)
     {
         printf("i am 11");
     }
