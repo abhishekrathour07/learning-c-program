@@ -1,0 +1,90 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+     typedef struct stack
+{
+int data;
+struct stack *next;
+}stack;
+stack *top;
+int stack_empty()
+{
+     if(top==NULL)
+     return 1;
+     else
+return 0;
+}
+void push()
+{
+stack *p;
+if(top==NULL)
+{
+top=(stack*)malloc(sizeof(stack));
+printf("Enter data ");
+scanf("%d",&top->data);
+top->next=NULL;
+}
+else
+{      
+     p=(stack*)malloc(sizeof(stack));
+      printf("Ente data ");
+scanf("%d",&p->data);
+p->next=top;
+top=p;
+}
+}
+void pop()
+{
+int i;
+stack *p;
+i=stack_empty();
+if(i==0)
+{
+    p=top;
+    top=top->next;
+     printf("Deleted element is %d",p->data);
+free(p);
+}
+else
+{
+printf("Stack is empty");
+}
+}
+void display()
+{
+stack *p;
+p=top;
+while(p!=NULL)
+{
+printf("%d->",p->data);
+p=p->next;
+}
+}
+void main()
+{
+int ch;
+top=NULL;
+clrscr();
+while(1)
+{
+printf("\nEnter your choice\n1.Push\n2.Pop\n3.Display\n4.Exit\n");
+scanf("%d",&ch);
+switch(ch)
+{
+case 1:
+	push();
+	break;
+case 2:
+	pop();
+	break;
+case 3:
+	display();
+	break;
+case 4:
+	exit(1);
+	break;
+default:
+	printf("Enter correct choice ");
+}
+}
+}
