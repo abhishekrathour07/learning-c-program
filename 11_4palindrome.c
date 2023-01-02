@@ -17,12 +17,6 @@ void main()
         num = num / 10;
 
     } while (num != 0);
-    printf(" sum =%d\n ", sum);
     printf("reverse = %d\n", reverse);
-    if (n == reverse)
-        printf("\ntrue");
-    else
-    {
-        printf("\nfalse");
-    }
+    
 }
