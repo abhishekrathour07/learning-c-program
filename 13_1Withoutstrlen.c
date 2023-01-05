@@ -5,7 +5,7 @@ char s[100];
 int i;
 
 printf("Enter the string");
-scanf("%s",s);
+gets(s);
 
 for(i = 0; s[i] != '\0'; ++i);
 
