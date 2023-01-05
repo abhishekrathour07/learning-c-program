@@ -10,7 +10,7 @@ void main(){
     }
       for(i=0;i<n-1;i++){
         count =0; //avoiding unwanted pass
-        for(j=0;j<n-1-i;j++){ //n-1-i because avoiding the unnessessary comparison.
+        for(j=0;j<n-1-i;j++){ //n-1-i because avoiding the unnessessary  step during passes.
             if(a[j]>a[j+1]){
                 int temp =a[j];
                 a[j] =a[j+1];
