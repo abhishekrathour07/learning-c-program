@@ -4,7 +4,6 @@
 
 int main()
 {
-    
     int r = 4;
     float pie = 3.14;
     int h = 3;
@@ -13,8 +12,5 @@ int main()
     printf("The address is %u\n",&r);
     printf("The address is %u\n",&pie);
     printf("The address is %u\n",&h);
-
-
-    
     return 0;
 } 
