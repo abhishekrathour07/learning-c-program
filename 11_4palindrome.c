@@ -15,8 +15,16 @@ void main()
         sum = sum + digit;
         reverse = reverse * 10 + digit;
         num = num / 10;
+        
 
     } while (num != 0);
+    printf("%d",sum); 
     printf("reverse = %d\n", reverse);
+    if(reverse==n){
+        printf("Enter digit is palindrome");
+    }
+    else{
+        printf("Not a palindrome");
+    }
     
 }

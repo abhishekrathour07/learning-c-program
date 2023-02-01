@@ -2,7 +2,7 @@
 #include<conio.h>
 void main()
 {
-    int n, a[25], i, total[20],m1[20],m2[20],m3[20];
+    int n, i, total[20],m1[20],m2[20],m3[20];
     float average[20];
     printf("Enter number of students: ");
     scanf("%d",&n);

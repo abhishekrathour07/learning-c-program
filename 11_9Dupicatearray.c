@@ -14,6 +14,7 @@ int main ()
         for ( j = i + 1; j < size; j++)  
         {  
             if ( arr[i] == arr[j])  
+            
             {  
                 for ( k = j; k < size - 1; k++)  
                 {  

@@ -18,15 +18,15 @@ void main()
     per = total / 5;
     if (per < 40)
         printf("Your percentage is %f and you are fail", per);
-    else if (per >= 40 && per < 50)
+    else if (per >= 40 && per <= 50)
         printf("Your percentage is %f and Your grade is d", per);
-    else if (per > 50 && per < 60)
+    else if (per >= 50 && per <= 60)
         printf("Your percentage is %f and Your grade is c", per);
-    else if (per > 60 && per < 70)
+    else if (per >= 60 && per <= 70)
         printf("Your percentage is %f and Your grade is b", per);
-    else if (per > 70 && per < 85)
+    else if (per >= 70 && per <= 85)
         printf("Your percentage is %f and Your grade is A", per);
-    else if (per > 85 && per < 100)
+    else if (per >= 85 && per <= 100)
         printf("Your percentage is %f **DISTICTION**", per);
    
 }
