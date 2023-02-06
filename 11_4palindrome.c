@@ -13,7 +13,7 @@ void main()
 
         digit = num % 10;
         sum = sum + digit;
-        reverse = reverse * 10 + digit;
+        reverse = reverse * 10 + digit; 
         num = num / 10;
         
 

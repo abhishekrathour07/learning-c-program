@@ -11,6 +11,6 @@ void main()
     }
     else
     {
-        ("i am not 11");
+       printf("i am not 11");
     }
 }
