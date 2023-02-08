@@ -1,17 +1,8 @@
-#include <stdio.h>
-int main()
-{
-    int n , last;
-    printf("Enter number:");
-    scanf("%d", &n);
-    printf("Number = %d\n", n);
-    last = n % 10;
-    while (n >= 10)
-    {
-        n = n / 10;
-
-    }
-    printf("first digit = %d\n",n);
-    printf("last digit = %d\n", last);
-    return 0;
+#include<stdio.h>
+void main(){
+    int principal ,rate ,year;
+    float simpl =(principal*rate *year )/100;
+    printf("Enter the value of principL rate and year");
+    scanf("%d %d%d",&principal,&rate,&year);
+    printf("SImpleinterest = %f",simpl);
 }
