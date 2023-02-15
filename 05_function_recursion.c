@@ -10,7 +10,6 @@ int factorial(int x)
     }
     else
     {
-    printf("factorial order is %d\n",x);
         return x * factorial(x - 1);
     }
 }

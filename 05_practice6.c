@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 int sumNumbers(int n){
-    printf("the natural numbers are %d\n",n);
  if (n != 0){
         return n + sumNumbers(n - 1);
  } 
