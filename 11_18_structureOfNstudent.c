@@ -1,3 +1,4 @@
+// Ques no. 18
 #include <stdio.h>
 struct student
 {

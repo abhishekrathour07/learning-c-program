@@ -1,3 +1,4 @@
+// Ques no. 7
 #include<stdio.h>
 #include<math.h>
 void main()

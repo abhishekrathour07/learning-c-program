@@ -1,4 +1,4 @@
-
+// Ques no. 19
 #include <stdio.h>
 #include <string.h>
 // struct student
