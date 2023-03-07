@@ -10,8 +10,8 @@ int main()
 }
 int sum(int a, int b)
 {
-    int c = a + b;
     a = 2345;
     b = 747;
+    int c = a + b;
     return c;
 }
