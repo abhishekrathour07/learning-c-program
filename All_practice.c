@@ -1,8 +1,21 @@
 #include<stdio.h>
-void main(){
-    int principal ,rate ,year;
-    float simpl =(principal*rate *year )/100;
-    printf("Enter the value of principL rate and year");
-    scanf("%d %d%d",&principal,&rate,&year);
-    printf("SImpleinterest = %f",simpl);
+int main()
+{
+    int n,rem,sum=0,temp;
+    printf("enter the n avlue :");
+    scanf("%d",&n);
+    printf("Number = %d\n",n);
+    temp=n;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+
+    }
+    printf("reverse = %d\n",sum);
+    if(temp ==sum)
+    printf("its a palindrome number");
+    else
+    printf("its not apalindrome number");
 }

@@ -12,7 +12,7 @@ void main()
         printf("Enter the marks of 3 subjects of student %d: ",i+1);
         scanf("%d %d %d",&m1[i],&m2[i],&m3[i]);
     }
-    for(i=0;i<3;i++)
+    for(i=0;i<n;i++)
     {
         total[i]=m1[i]+m2[i]+m3[i];
         average[i]=(float)total[i]/3;
@@ -23,12 +23,12 @@ void main()
     for(i=0;i<n;i++)
     {
         printf("%d\t %d\t %d\t %d\t%f\n",i+1,m1[i],m2[i],m3[i],average[i]);
-        printf("------------------------------------------\n");
+        printf("-----------------------------------------\n");
 
 
-        if(average[i]>=35)
-            printf("\nStudent is PASS\n");
-        else
-            printf("\nStudent is FAIL\n");
+    //     if(average[i]>=35)
+    //         printf("\nStudent is PASS\n");
+    //     else
+    //         printf("\nStudent is FAIL\n");
     }
 }

@@ -1,4 +1,4 @@
-// write aprogram using a Function which calculate the sum and avg of two numbers.Use
+// write  a program using a Function which calculate the sum and avg of two numbers.Use
 // printf and print the value in main.
 
 #include <stdio.h>
