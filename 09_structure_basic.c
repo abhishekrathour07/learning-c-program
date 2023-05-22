@@ -42,5 +42,5 @@ void main()
                 printf("Roll code of student  is :- %s\n", s3.rollcode);
                         printf("Attendence of student  is :- %.2f\n", s3.attendence);
 
-     
-}
+      
+}1
