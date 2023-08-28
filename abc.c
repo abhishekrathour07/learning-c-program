@@ -1,45 +1,36 @@
 #include <stdio.h>
+#include<math.h>
 
-int main() {
-    int num, originalNum, lastDigit, temp;
-    
-    printf("Enter a number: ");
-    scanf("%d", &num);
+int main()
+{
+    int n, last, first, middle;
+    int number, originalNumber, digitCount = 0;
 
-    originalNum = num;
-    
-    // Find the last digit
-    lastDigit = num % 10;
-    
-    // Find the number of digits in the number
-    int numDigits = 0;
-    while (num != 0) {
-        num /= 10;
-        numDigits++;
+
+    printf("Enter the number");
+    scanf("%d", &number);
+    int num = number;
+    last = number % 10; 
+    while (n >= 10)
+    {
+        n = n / 10;
     }
-    
-    // Calculate the divisor to extract the first digit
-    int divisor = 1;
-    for (int i = 1; i < numDigits; i++) {
-        divisor *= 10;
+    first = n;
+    while (originalNumber != 0) {
+        originalNumber /= 10;
+        digitCount++;
     }
-    
-    // Extract the first digit
-    int firstDigit = originalNum / divisor;
-    
-    // Remove the first and last digits
-    originalNum = originalNum - (firstDigit * divisor);
-    originalNum = originalNum / 10;
-    
-    // Swap the first and last digits
-    temp = lastDigit;
-    lastDigit = firstDigit;
-    firstDigit = temp;
-    
-    // Reconstruct the number with swapped digits
-    int result = (lastDigit * divisor) + originalNum + (firstDigit * 10);
-    
-    printf("Number with first and last digits swapped: %d\n", result);
 
-    return 0;
+    if (digitCount <= 2) {
+        printf("The number after removing first and last digits: 0\n");
+    } else {
+        int firstDigit = (int)(n / pow(10, digitCount - 1));
+        int lastDigit = n% 10;
+
+        int result = (n - firstDigit * pow(10, digitCount - 1) - lastDigit) / 10;
+
+       
+    printf("Swap digit = %d%d%d", last, result, first);
+    }
+  
 }
