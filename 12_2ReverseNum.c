@@ -2,27 +2,24 @@
 
 void main()
 {
-    int n, sum = 0, digit, reverse = 0, num;
-
-    printf("Enter the num\n");
-    scanf("%d", &num);
-    printf("Given number is %d\n", num);
-    n = num;
-    do
+    int a[10], i, size, x;
+    printf("Enter size of array:");
+    scanf("%d", &size);
+    for (i = 0; i < size; i++)
     {
-
-        digit = num % 10;
-        sum = sum + digit;
-        reverse = reverse * 10 + digit;
-        num = num / 10;
-
-    } while (num != 0);
-    printf(" sum =%d\n ", sum);
-    printf("reverse = %d\n", reverse);
-    if (n == reverse)
-        printf("\ntrue");
-    else
+        printf("enter %d elements:", i + 1);
+        scanf("%d", &a[i]);
+    }
+    printf("enter value of x:");
+    scanf("%d", &x);
+    a[0] = x;
+    for (i = size ; i > 0; i--)
     {
-        printf("\nfalse");
+        a[i + 1] = a[i];
+    }
+    size++;
+    for (i = 0; i < size; i++)
+    {
+        printf("%d\n", a[i]);
     }
 }
